@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://whiteclub.rs/</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://aislike.rs/white/baner/logo transparent.png</image:loc>
+      <image:title>WHITE Club Vrnjačka Banja Logo</image:title>
+      <image:caption>Premium Nightlife Experience in Vrnjačka Banja</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://whiteclub.rs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://whiteclub.rs"/>
+  </url>
+  <url>
+    <loc>https://whiteclub.rs/event/Maya%20Berovic/April%2015,%202024</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://aislike.rs/white/baner/1.png</image:loc>
+      <image:title>Maya Berović at WHITE Club</image:title>
+      <image:caption>Maya Berović Live Performance - April 15, 2024</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://whiteclub.rs/#events</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whiteclub.rs/#contact</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
