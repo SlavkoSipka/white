@@ -8,56 +8,56 @@ const performers = [
   {
     name: "Maya Berovic",
     date: "April 15, 2024",
-    image: "https://aislike.rs/white/baner/1.png",
+    image: "/images/1.png",
     url: "https://maya-berovic.netlify.app/",
     available: true
   },
   {
     name: "Stefan Rasta",
     date: "April 29, 2024",
-    image: "https://aislike.rs/white/baner/3.png",
+    image: "/images/3.png",
     url: "https://stefan-rasta.netlify.app/",
     available: true
   },
   {
     name: "Tanja Savic",
     date: "May 13, 2024",
-    image: "https://aislike.rs/white/baner/2.png",
+    image: "/images/2.png",
     url: "https://tanja-savic.netlify.app/",
     available: true
   },
   {
     name: "Sloba Radanovic",
     date: "May 27, 2024",
-    image: "https://aislike.rs/white/baner/4.png",
+    image: "/images/4.png",
     url: "https://sloba-radanovic.netlify.app/",
     available: true
   },
   {
     name: "Andrea Cekic",
     date: "June 3, 2024",
-    image: "https://aislike.rs/white/baner/9.png",
+    image: "/images/9.png",
     url: "https://andrea-cekic.netlify.app/",
     available: true
   },
   {
     name: "Relja Popovic",
     date: "June 10, 2024",
-    image: "https://aislike.rs/white/baner/6.png",
+    image: "/images/6.png",
     url: "https://zorana-micanovic.netlify.app/",
     available: true
   },
   {
     name: "Devito",
     date: "June 7, 2024",
-    image: "https://aislike.rs/white/baner/devito.png",
+    image: "/images/devito.png",
     url: "https://devito.netlify.app/",
     available: true
   },
   {
     name: "Zorana Micanovic",
     date: "June 24, 2024",
-    image: "https://aislike.rs/white/baner/5.png",
+    image: "/images/5.png",
     url: "https://relja-popovic.netlify.app/",
     available: true
   }
@@ -115,7 +115,7 @@ function App() {
                   playsInline
                   className="absolute inset-0 w-full h-full object-cover"
                 >
-                  <source src="https://aislike.rs/white/baner/0419(1).mp4" type="video/mp4" />
+                  <source src="/images/0419(1).mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-black/50" />
                 {!isLoading && (
@@ -126,7 +126,7 @@ function App() {
                   }`}>
           <div className="container mx-auto flex justify-between items-center px-4">
             <img 
-              src={isScrolled ? "https://aislike.rs/white/baner/logo transparent.png" : "https://aislike.rs/white/baner/beli logo.png"}
+              src={isScrolled ? "/images/logo transparent.png" : "/images/beli logo.png"}
               loading="lazy"
               alt="WHITE club" 
               className={`transition-all duration-300 ${isScrolled ? 'h-12 md:h-20' : 'h-16 md:h-32'}`}
@@ -271,7 +271,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <img 
-                src="https://aislike.rs/white/baner/beli logo.png"
+                src="/images/beli logo.png"
                 loading="lazy"
                 alt="WHITE club Vrnjačka Banja"
                 className="h-24 mb-6"
