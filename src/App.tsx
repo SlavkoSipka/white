@@ -115,7 +115,7 @@ function App() {
                   playsInline
                   className="absolute inset-0 w-full h-full object-cover"
                 >
-                  <source src="/images/0419(1).mp4" type="video/mp4" />
+                  <source src="/images/0419%281%29.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-black/50" />
                 {!isLoading && (
@@ -126,7 +126,7 @@ function App() {
                   }`}>
           <div className="container mx-auto flex justify-between items-center px-4">
             <img 
-              src={isScrolled ? "/images/logo transparent.png" : "/images/beli logo.png"}
+              src={isScrolled ? "/images/logo%20transparent.png" : "/images/beli%20logo.png"}
               loading="lazy"
               alt="WHITE club" 
               className={`transition-all duration-300 ${isScrolled ? 'h-12 md:h-20' : 'h-16 md:h-32'}`}
@@ -271,7 +271,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <img 
-                src="/images/beli logo.png"
+                src="/images/beli%20logo.png"
                 loading="lazy"
                 alt="WHITE club Vrnjačka Banja"
                 className="h-24 mb-6"

@@ -21,7 +21,7 @@ export default function LoadingScreen() {
     <div className="fixed inset-0 bg-white z-50 flex items-center justify-center">
       <div className="text-center">
         <img
-          src="/images/logo transparent.png"
+          src="/images/logo%20transparent.png"
           alt="WHITE club"
           className="h-32 mb-8 w-auto"
         />

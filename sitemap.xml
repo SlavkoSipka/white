@@ -8,7 +8,7 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://whiteclub.rs/images/logo transparent.png</image:loc>
+      <image:loc>https://whiteclub.rs/images/logo%20transparent.png</image:loc>
       <image:title>WHITE Club Vrnjačka Banja Logo</image:title>
       <image:caption>Premium Nightlife Experience in Vrnjačka Banja</image:caption>
     </image:image>
