@@ -1,5 +1,3 @@
-import { sheets_v4 } from '@google-sheets/v4';
-
 const SPREADSHEET_ID = '1N2AtxAoDUdDTjACBKRRwXimp-Nwv84RlGgzYxOPtr0E';
 const RANGE = 'Sheet1!A2:C';
 
@@ -12,9 +10,10 @@ export interface TableData {
 export async function fetchTableData(): Promise<TableData[]> {
   try {
     const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}`;
-    const params = new URLSearchParams({
-      key: 'AIzaSyCeY9udrNN_kq0YiM7d6UPZMGCzv5Su4Ec'
-    });
+    const key =
+      import.meta.env.VITE_GOOGLE_SHEETS_API_KEY ||
+      'AIzaSyCeY9udrNN_kq0YiM7d6UPZMGCzv5Su4Ec';
+    const params = new URLSearchParams({ key });
 
     const response = await fetch(`${apiUrl}?${params}`, {
       headers: {

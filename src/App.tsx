@@ -1,70 +1,20 @@
 import React from 'react';
-import { Routes, Route, useNavigate, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import { Calendar, MapPin, Phone } from 'lucide-react';
 import LoadingScreen from './components/LoadingScreen';
 const EventDetails = React.lazy(() => import('./pages/EventDetails'));
 
 const performers = [
   {
-    name: "Maya Berovic",
-    date: "April 15, 2024",
-    image: "/images/1.png",
-    url: "https://maya-berovic.netlify.app/",
-    available: true
-  },
-  {
-    name: "Stefan Rasta",
-    date: "April 29, 2024",
-    image: "/images/3.png",
-    url: "https://stefan-rasta.netlify.app/",
-    available: true
-  },
-  {
-    name: "Tanja Savic",
-    date: "May 13, 2024",
-    image: "/images/2.png",
-    url: "https://tanja-savic.netlify.app/",
-    available: true
-  },
-  {
-    name: "Sloba Radanovic",
-    date: "May 27, 2024",
-    image: "/images/4.png",
-    url: "https://sloba-radanovic.netlify.app/",
-    available: true
-  },
-  {
-    name: "Andrea Cekic",
-    date: "June 3, 2024",
-    image: "/images/9.png",
-    url: "https://andrea-cekic.netlify.app/",
-    available: true
-  },
-  {
-    name: "Relja Popovic",
-    date: "June 10, 2024",
-    image: "/images/6.png",
-    url: "https://zorana-micanovic.netlify.app/",
-    available: true
-  },
-  {
     name: "Devito",
-    date: "June 7, 2024",
-    image: "/images/devito.png",
-    url: "https://devito.netlify.app/",
-    available: true
-  },
-  {
-    name: "Zorana Micanovic",
-    date: "June 24, 2024",
-    image: "/images/5.png",
-    url: "https://relja-popovic.netlify.app/",
+    date: "13. jun 2026",
+    image: "/images/natasa.jpeg",
+    url: "https://natasa-bekvalac.netlify.app/",
     available: true
   }
 ];
 
 function App() {
-  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [showHeroText, setShowHeroText] = React.useState(true);
   const [isLoading, setIsLoading] = React.useState(true);
@@ -168,7 +118,7 @@ function App() {
             <h2 className="text-4xl font-bold">Upcoming Events</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+          <div className="grid grid-cols-1 gap-6 relative max-w-lg mx-auto">
             {performers.map((performer, index) => (
               <div 
                 key={index}
