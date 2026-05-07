@@ -14,15 +14,15 @@ const performers = [
   },
   {
     name: "Tea Tairovic",
-    date: "TBD",
+    date: "17. jul 2026",
     image: "/images/tea.jpeg",
     url: "https://tea-tairovic.netlify.app/",
     available: true
   },
   {
     name: "Barbara Bobak",
-    date: "TBD",
-    image: "/images/barbara.jpeg",
+    date: "25. jul 2026",
+    image: "/images/bobak.jpeg",
     url: "https://barbara-bobak.netlify.app/",
     available: true
   }
