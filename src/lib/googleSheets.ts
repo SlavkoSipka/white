@@ -1,5 +1,5 @@
-const SPREADSHEET_ID = '1N2AtxAoDUdDTjACBKRRwXimp-Nwv84RlGgzYxOPtr0E';
-const RANGE = 'Sheet1!A2:C';
+const SPREADSHEET_ID = '1njuK0qbrdrXJRBRLYoeBCUSknRYqDW6y1q-6Nz1ntPU';
+const DEFAULT_SHEET = 'Natasa Bekvalac';
 
 export interface TableData {
   tableNumber: string;
@@ -7,9 +7,12 @@ export interface TableData {
   reservedBy: string;
 }
 
-export async function fetchTableData(): Promise<TableData[]> {
+export async function fetchTableData(
+  sheetName: string = DEFAULT_SHEET
+): Promise<TableData[]> {
   try {
-    const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}`;
+    const range = `${sheetName}!A2:C`;
+    const apiUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${encodeURIComponent(range)}`;
     const key =
       import.meta.env.VITE_GOOGLE_SHEETS_API_KEY ||
       'AIzaSyCeY9udrNN_kq0YiM7d6UPZMGCzv5Su4Ec';

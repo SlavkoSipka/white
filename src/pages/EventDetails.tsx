@@ -3,6 +3,12 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { TableData, fetchTableData } from '../lib/googleSheets';
 
+const PERFORMER_TO_SHEET: Record<string, string> = {
+  'Natasa Bekvalac': 'Natasa Bekvalac',
+  'Tea Tairovic': 'Tea Tairovic',
+  'Barbara Bobak': 'Barbara Bobak',
+};
+
 export default function EventDetails() {
   const { performerName, date } = useParams();
   const [tables, setTables] = React.useState<TableData[]>([]);
@@ -11,7 +17,11 @@ export default function EventDetails() {
   React.useEffect(() => {
     async function loadTables() {
       try {
-        const data = await fetchTableData();
+        const sheetName =
+          (performerName && PERFORMER_TO_SHEET[performerName]) ||
+          performerName ||
+          undefined;
+        const data = await fetchTableData(sheetName);
         setTables(data);
       } catch (err) {
         setError('Failed to load tables');
@@ -20,7 +30,7 @@ export default function EventDetails() {
     }
 
     loadTables();
-  }, []);
+  }, [performerName]);
 
   return (
     <div className="min-h-screen bg-white text-black py-12">

@@ -6,10 +6,24 @@ const EventDetails = React.lazy(() => import('./pages/EventDetails'));
 
 const performers = [
   {
-    name: "Devito",
+    name: "Natasa Bekvalac",
     date: "13. jun 2026",
     image: "/images/natasa.jpeg",
     url: "https://natasa-bekvalac.netlify.app/",
+    available: true
+  },
+  {
+    name: "Tea Tairovic",
+    date: "TBD",
+    image: "/images/tea.jpeg",
+    url: "https://tea-tairovic.netlify.app/",
+    available: true
+  },
+  {
+    name: "Barbara Bobak",
+    date: "TBD",
+    image: "/images/barbara.jpeg",
+    url: "https://barbara-bobak.netlify.app/",
     available: true
   }
 ];
@@ -118,7 +132,7 @@ function App() {
             <h2 className="text-4xl font-bold">Upcoming Events</h2>
           </div>
           
-          <div className="grid grid-cols-1 gap-6 relative max-w-lg mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
             {performers.map((performer, index) => (
               <div 
                 key={index}
