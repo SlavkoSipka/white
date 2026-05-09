@@ -13,6 +13,20 @@ const performers = [
     available: true
   },
   {
+    name: "Stefan Rasta",
+    date: "04. jul 2026",
+    image: "/images/stefan-rasta.jpeg",
+    url: "/event/Stefan Rasta/04. jul 2026",
+    available: true
+  },
+  {
+    name: "Sandra Afrika",
+    date: "15. jul 2026",
+    image: "/images/sandra-afrika.jpeg",
+    url: "/event/Sandra Afrika/15. jul 2026",
+    available: true
+  },
+  {
     name: "Tea Tairovic",
     date: "17. jul 2026",
     image: "/images/tea.jpeg",

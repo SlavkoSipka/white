@@ -7,6 +7,8 @@ const PERFORMER_TO_SHEET: Record<string, string> = {
   'Natasa Bekvalac': 'Natasa Bekvalac',
   'Tea Tairovic': 'Tea Tairovic',
   'Barbara Bobak': 'Barbara Bobak',
+  'Stefan Rasta': 'Stefan Rasta',
+  'Sandra Afrika': 'Sandra Afrika',
 };
 
 export default function EventDetails() {
