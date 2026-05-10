@@ -9,7 +9,7 @@ const performers = [
     name: "Natasa Bekvalac",
     date: "13. jun 2026",
     image: "/images/natasa.jpeg",
-    url: "https://natasa-bekvalac.netlify.app/",
+    url: "https://natasa-bekvalac1.netlify.app/",
     available: true
   },
   {
