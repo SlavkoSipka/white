@@ -16,14 +16,14 @@ const performers = [
     name: "Stefan Rasta",
     date: "04. jul 2026",
     image: "/images/stefan-rasta.jpeg",
-    url: "/event/Stefan Rasta/04. jul 2026",
+    url: "https://stefan-rasta.netlify.app/",
     available: true
   },
   {
     name: "Sandra Afrika",
     date: "15. jul 2026",
     image: "/images/sandra-afrika.jpeg",
-    url: "/event/Sandra Afrika/15. jul 2026",
+    url: "https://sandra-afrika.netlify.app/",
     available: true
   },
   {
