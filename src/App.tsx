@@ -39,6 +39,13 @@ const performers = [
     image: "/images/bobak.jpeg",
     url: "https://barbara-bobak.netlify.app/",
     available: true
+  },
+  {
+    name: "Devito",
+    date: "13. avgust 2026",
+    image: "/images/devito (1).png",
+    url: "https://devito.netlify.app/",
+    available: true
   }
 ];
 
