@@ -41,6 +41,13 @@ const performers = [
     available: true
   },
   {
+    name: "Uros Zivkovic",
+    date: "1. avgust 2026",
+    image: "/images/uros.jpeg",
+    url: "https://uros-zivkovic.netlify.app/",
+    available: true
+  },
+  {
     name: "Devito",
     date: "13. avgust 2026",
     image: "/images/devito (1).png",
