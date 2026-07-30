@@ -53,6 +53,13 @@ const performers = [
     image: "/images/devito (1).png",
     url: "https://devito.netlify.app/",
     available: true
+  },
+  {
+    name: "Coby",
+    date: "20. avgust 2026",
+    image: "/images/coby.jpeg",
+    url: "https://coby1.netlify.app/",
+    available: true
   }
 ];
 
